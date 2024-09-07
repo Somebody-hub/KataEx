@@ -48,7 +48,6 @@ public class UserController {
     @PostMapping("/new")
     public String addUser(@ModelAttribute("user") User user) {
         userService.addUser(user);
-        System.out.println("Hello");
         return "redirect:/";
     }
 
