@@ -1,11 +1,10 @@
-package  PP_3_1_1_Spring_Boot.KataEx.dao;
+package PP_3_1_1_Spring_Boot.KataEx.dao;
 
 import PP_3_1_1_Spring_Boot.KataEx.model.User;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -41,7 +40,6 @@ public class UserDaoImpl implements UserDao {
     public void deleteUserById(Long id) {
         getUserById(id).setDeleted(true);
     }
-
 
 
 }

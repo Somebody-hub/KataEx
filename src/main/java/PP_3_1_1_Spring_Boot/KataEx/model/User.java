@@ -1,4 +1,4 @@
-package  PP_3_1_1_Spring_Boot.KataEx.model;
+package PP_3_1_1_Spring_Boot.KataEx.model;
 
 import jakarta.persistence.*;
 
@@ -8,7 +8,7 @@ import jakarta.persistence.*;
 public class User {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String Name;

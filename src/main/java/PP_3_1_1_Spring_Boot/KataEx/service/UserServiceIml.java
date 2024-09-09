@@ -1,10 +1,11 @@
-package  PP_3_1_1_Spring_Boot.KataEx.service;
+package PP_3_1_1_Spring_Boot.KataEx.service;
 
+import PP_3_1_1_Spring_Boot.KataEx.dao.UserDao;
+import PP_3_1_1_Spring_Boot.KataEx.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import PP_3_1_1_Spring_Boot.KataEx.model.User;
-import PP_3_1_1_Spring_Boot.KataEx.dao.UserDao;
+
 import java.util.List;
 
 @Service

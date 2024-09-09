@@ -1,6 +1,7 @@
-package  PP_3_1_1_Spring_Boot.KataEx.service;
+package PP_3_1_1_Spring_Boot.KataEx.service;
 
 import PP_3_1_1_Spring_Boot.KataEx.model.User;
+
 import java.util.List;
 
 public interface UserService {

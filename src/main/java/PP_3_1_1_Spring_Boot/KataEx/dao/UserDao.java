@@ -1,4 +1,4 @@
-package  PP_3_1_1_Spring_Boot.KataEx.dao;
+package PP_3_1_1_Spring_Boot.KataEx.dao;
 
 
 import PP_3_1_1_Spring_Boot.KataEx.model.User;
