@@ -6,8 +6,10 @@
 </head>
 <body>
 <form th:method="POST" th:action="@{/new}" th:object="${user}">
-    <lable for="name">Enter name: </lable>
-    <input type="text" th:field="*{name}" id="name"/>
+    <lable for="firstname">Enter firstname: </lable>
+    <input type="text" th:field="*{FirstName}" id="firstname"/>
+    <lable for="lastname">Enter lastname: </lable>
+    <input type="text" th:field="*{LastName}" id="lastname"/>
     <lable for="age">Enter age: </lable>
     <input type="text" th:field="*{age}" id="age"/>
     <lable for="email">Enter email: </lable>

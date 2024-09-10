@@ -11,7 +11,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String Name;
+    private String FirstName;
+
+    private String LastName;
 
     private int Age;
 
@@ -23,8 +25,9 @@ public class User {
         this.deleted = false;
     }
 
-    public User(String Name, int Age, String Email) {
-        this.Name = Name;
+    public User(String FirstName, String LastName, int Age, String Email) {
+        this.FirstName = FirstName;
+        this.LastName = LastName;
         this.Age = Age;
         this.Email = Email;
         this.deleted = false;
@@ -38,12 +41,10 @@ public class User {
         return this.id;
     }
 
-    public void setName(String name) {
-        this.Name = name;
-    }
+    public void setFirstName(String firstName) { this.FirstName = firstName; }
 
-    public String getName() {
-        return Name;
+    public String getFirstName() {
+        return FirstName;
     }
 
     public void setAge(int age) {
@@ -66,14 +67,20 @@ public class User {
         this.deleted = deleted;
     }
 
-    public boolean getDeleted() {
+    public boolean isDeleted() {
         return this.deleted;
     }
+
+    public String getLastName() { return LastName; }
+
+    public void setLastName(String lastName) { LastName = lastName; }
+
 
     @Override
     public String toString() {
         return "id = " + this.id
-                + "\n" + "Name = " + this.Name
+                + "\n" + "FirstName = " + this.FirstName
+                + "\n" + "LastName = " + this.LastName
                 + "\n" + "Age = " + this.Age
                 + "\n" + "Email " + this.Email
                 + "\n" + "deleted" + this.deleted;

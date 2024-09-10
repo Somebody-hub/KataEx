@@ -11,13 +11,15 @@
 <table border="1">
     <tr>
         <th>Id</th>
-        <th>Name</th>
+        <th>First Name</th>
+        <th>Last Name</th>
         <th>Age</th>
         <th>Email</th>
     </tr>
     <tr th:each="user : ${usersList}">
         <td th:utext="${user.id}"></td>
-        <td><a th:href="@{/{id}/edit(id=${user.id})}" th:text="${user.name}">user</a></td>
+        <td><a th:href="@{/{id}/edit(id=${user.id})}" th:text="${user.FirstName}">user</a></td>
+        <td th:utext="${user.LastName}"></td>
         <td th:utext="${user.Age}"></td>
         <td th:utext="${user.Email}"></td>
     </tr>
